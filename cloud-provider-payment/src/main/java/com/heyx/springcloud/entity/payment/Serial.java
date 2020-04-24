@@ -17,11 +17,11 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "payment_serial")
 @org.hibernate.annotations.Table(appliesTo = "payment_serial", comment = "支付流水号")
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class Serial extends UIDEntity {
 
     @ApiModelProperty(value = "编号")
     @Column(columnDefinition = "varchar(200) comment '编号'", nullable = false)
-    private String serial;
+    private String num;
 }

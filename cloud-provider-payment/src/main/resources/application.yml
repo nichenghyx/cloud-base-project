@@ -28,7 +28,7 @@ swagger:
 
 
 mybatis-plus:
-  mapper-locations: classpath*:com/heyx/springcloud/dao/**/*.xml
+  mapper-locations: classpath:com/heyx/springcloud/mapper/**/*.xml
   type-aliases-package: com.heyx.springcloud.entity
   configuration:
     map-underscore-to-camel-case: true #采用驼峰命名 映射下划线字段配置

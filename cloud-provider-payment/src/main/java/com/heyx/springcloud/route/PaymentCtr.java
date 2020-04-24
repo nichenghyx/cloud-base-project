@@ -19,10 +19,10 @@ public class PaymentCtr {
     private SerialService service;
 
     @PostMapping("/create")
-    public ResponseUtils create(Serial serial){
-        int result = service.create(serial);
+    public ResponseUtils create(String num){
+        int result = service.create(num);
         if (result > 0){
-            return ResponseUtils.getSuccessResponseJoData(serial);
+            return ResponseUtils.getSuccessResponseJoData(num);
         }else {
             return ResponseUtils.getBadRequestJoMsg("插入失败~");
         }
