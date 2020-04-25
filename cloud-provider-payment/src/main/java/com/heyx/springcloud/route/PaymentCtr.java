@@ -13,16 +13,16 @@ import javax.annotation.Resource;
 @Slf4j
 @RestController
 @RequestMapping(ApiConst.PC  + "/document/file")
-@Api(tags = ApiConst.PC + "付款编号管理")
+@Api(tags = ApiConst.PC_TAG + "付款编号管理")
 public class PaymentCtr {
     @Resource
     private SerialService service;
 
     @PostMapping("/create")
-    public ResponseUtils create(String num){
-        int result = service.create(num);
+    public ResponseUtils create(Serial serial){
+        int result = service.create(serial);
         if (result > 0){
-            return ResponseUtils.getSuccessResponseJoData(num);
+            return ResponseUtils.getSuccessResponseJoData(serial);
         }else {
             return ResponseUtils.getBadRequestJoMsg("插入失败~");
         }

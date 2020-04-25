@@ -54,4 +54,5 @@ public interface HttpConst {
      */
     String ERROR_500_FILE_UPLOAD = "文件上传失败";
 
+    String SUCCESS_MSG = "请求成功~";
 }

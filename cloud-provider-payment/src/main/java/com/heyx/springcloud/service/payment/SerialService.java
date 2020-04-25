@@ -12,8 +12,8 @@ public class SerialService extends BaseService<SerialMapper, Serial> {
     @Resource
     private SerialMapper serialMapper;
 
-    public int create(String num){
-        return serialMapper.create(num);
+    public int create(Serial serial){
+        return serialMapper.create(serial);
     }
 
     public Serial selectById(String id){

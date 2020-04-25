@@ -17,7 +17,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "payment_serial")
 @org.hibernate.annotations.Table(appliesTo = "payment_serial", comment = "支付流水号")
-@NoArgsConstructor
 @AllArgsConstructor
 public class Serial extends UIDEntity {
 

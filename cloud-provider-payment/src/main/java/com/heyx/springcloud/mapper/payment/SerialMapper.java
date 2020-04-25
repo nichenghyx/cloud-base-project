@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface SerialMapper extends BaseMapper<Serial> {
-    int create(@Param("num") String num);
+    int create(Serial serial);
     Serial selectById(@Param("id") String id);
 }
