@@ -5,7 +5,7 @@ public interface ApiConst {
     String VERSION = "/v1";
 
     String PREFIX =  "/api";
-    String PROJECT ="/provider";
+    String PROJECT ="/consumer";
     String PC_MODE ="/pc";
     String WX_MODE ="/wx";
 
@@ -14,5 +14,7 @@ public interface ApiConst {
 
     String PC_TAG = "PC-";
     String WX_TAG = "WX-";
+
+     String PAYMENT_URL = "http://127.0.0.1:8001/api/provider/v1/pc";
 
 }

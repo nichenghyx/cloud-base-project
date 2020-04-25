@@ -18,7 +18,10 @@ import javax.persistence.Table;
 @Table(name = "payment_serial")
 @org.hibernate.annotations.Table(appliesTo = "payment_serial", comment = "支付流水号")
 @AllArgsConstructor
+@NoArgsConstructor
 public class Serial extends UIDEntity {
+
+    private static final long serialVersionUID = 4004635697969109670L;
 
     @ApiModelProperty(value = "编号")
     @Column(columnDefinition = "varchar(200) comment '编号'", nullable = false)

@@ -12,14 +12,14 @@ import javax.annotation.Resource;
 
 @Slf4j
 @RestController
-@RequestMapping(ApiConst.PC  + "/document/file")
+@RequestMapping(ApiConst.PC  + "/payment")
 @Api(tags = ApiConst.PC_TAG + "付款编号管理")
 public class PaymentCtr {
     @Resource
     private SerialService service;
 
     @PostMapping("/create")
-    public ResponseUtils create(Serial serial){
+    public ResponseUtils create(@RequestBody Serial serial){
         int result = service.create(serial);
         if (result > 0){
             return ResponseUtils.getSuccessResponseJoData(serial);
