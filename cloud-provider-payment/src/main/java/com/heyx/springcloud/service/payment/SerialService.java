@@ -1,7 +1,7 @@
 package com.heyx.springcloud.service.payment;
 
 import com.heyx.springcloud.mapper.payment.SerialMapper;
-import com.heyx.springcloud.entity.payment.Serial;
+import com.heyx.springcloud.model.Serial;
 import com.heyx.springcloud.service.BaseService;
 import org.springframework.stereotype.Service;
 

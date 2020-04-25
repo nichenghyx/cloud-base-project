@@ -5,6 +5,6 @@ ${AnsiColor.BRIGHT_GREEN}
  \/\_____\  \ \_\    \ \_\ \_\  \ \_\  \ \_\\"\_\  \ \_____\     \ \_____\  \ \_____\  \ \_____\  \ \_____\  \ \____-
   \/_____/   \/_/     \/_/ /_/   \/_/   \/_/ \/_/   \/_____/      \/_____/   \/_____/   \/_____/   \/_____/   \/____/
 
-${AnsiColor.BRIGHT_RED}
+${AnsiColor.BR}
 Application Version: ${application.version}${application.formatted-version}
 Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}

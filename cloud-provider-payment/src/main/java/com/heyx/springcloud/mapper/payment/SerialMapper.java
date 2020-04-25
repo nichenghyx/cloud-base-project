@@ -1,7 +1,7 @@
 package com.heyx.springcloud.mapper.payment;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.heyx.springcloud.entity.payment.Serial;
+import com.heyx.springcloud.model.Serial;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

@@ -1,5 +1,7 @@
 spring:
   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
     url: jdbc:mysql://127.0.0.1:3306/heyx_spring_cloud?useUnicode=true&serverTimezone=Asia/Shanghai&characterEncoding=utf-8&useSSL=false
     username: root
     password: root

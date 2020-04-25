@@ -1,6 +1,6 @@
 package com.heyx.springcloud;
 
-import com.spring4all.swagger.EnableSwagger2Doc;
+import com.heyx.springcloud.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

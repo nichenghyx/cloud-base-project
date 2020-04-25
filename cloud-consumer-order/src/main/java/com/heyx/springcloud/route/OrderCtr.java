@@ -2,8 +2,7 @@ package com.heyx.springcloud.route;
 
 
 import com.heyx.springcloud.common.ResponseUtils;
-import com.heyx.springcloud.constant.ApiConst;
-import com.heyx.springcloud.entity.payment.Serial;
+import com.heyx.springcloud.model.Serial;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
