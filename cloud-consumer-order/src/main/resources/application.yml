@@ -1,0 +1,12 @@
+server:
+  port: 4001
+
+swagger:
+  base-package: com.heyx.springcloud.route
+  base-path: /api/**
+  title: springcloud
+  description: v1.0.0
+  termsOfServiceUrl: /
+  version: 1.0
+
+
