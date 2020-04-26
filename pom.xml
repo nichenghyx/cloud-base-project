@@ -11,8 +11,9 @@
         <module>cloud-swagger-starter</module>
         <module>cloud-common-utils</module>
         <module>cloud-payment-entity</module>
-        <module>cloud-provider-payment</module>
+        <module>cloud-provider-payment8001</module>
         <module>cloud-consumer-order</module>
+        <module>cloud-eureka-server6001</module>
     </modules>
     <packaging>pom</packaging>
     <!--统一管理jar包版本-->
@@ -21,7 +22,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>4.12</junit.version>
-        <log4j.version>1.2.17</log4j.version>
+        <log4j.version>1.2.27</log4j.version>
         <lombok.version>1.16.18</lombok.version>
         <mysql.version>5.1.47</mysql.version>
         <druid.version>1.1.16</druid.version>
