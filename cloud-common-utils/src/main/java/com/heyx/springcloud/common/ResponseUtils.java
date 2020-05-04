@@ -37,6 +37,17 @@ public class ResponseUtils {
                 .msg(HttpConst.SUCCESS_MSG)
                 .build();
     }
+
+    public static ResponseUtils getSuccessResponseJoData(String msg,Object data) {
+        if (data instanceof IPage){
+            return getSuccessResponseJoDataAndTotal(((IPage) data).getRecords(), ((IPage) data).getTotal());
+        }
+        return ResponseUtils.builder()
+                .data(data)
+                .status(HttpConst.SUCCESS)
+                .msg(msg)
+                .build();
+    }
     public static ResponseUtils getSuccessResponseJoDataAndTotal(Object data, long total) {
         return ResponseUtils.builder()
                 .data(data)
