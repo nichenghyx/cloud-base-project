@@ -8,5 +8,5 @@ public interface ApiConst extends ApiURL {
 
     String PC = PREFIX + PROJECT + VERSION + PC_MODE;
     String WX = PREFIX + PROJECT + VERSION + WX_MODE;
-    String PAYMENT_URL = "http://127.0.0.1:8001/api/provider/v1/pc/";
+    String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE/api/provider/v1/pc/";
 }
