@@ -1,0 +1,11 @@
+com\heyx\springcloud\swagger\SwaggerProperties$GlobalResponseMessageBody.class
+com\heyx\springcloud\swagger\SwaggerProperties$Contact.class
+com\heyx\springcloud\swagger\SwaggerAutoConfiguration.class
+com\heyx\springcloud\swagger\SwaggerProperties$Authorization.class
+com\heyx\springcloud\swagger\SwaggerProperties$DocketInfo.class
+com\heyx\springcloud\swagger\SwaggerProperties.class
+META-INF\spring-configuration-metadata.json
+com\heyx\springcloud\swagger\EnableSwagger2Doc.class
+com\heyx\springcloud\swagger\SwaggerProperties$GlobalResponseMessage.class
+com\heyx\springcloud\swagger\SwaggerProperties$UiConfig.class
+com\heyx\springcloud\swagger\SwaggerProperties$GlobalOperationParameter.class

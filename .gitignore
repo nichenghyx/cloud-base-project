@@ -25,3 +25,7 @@ logs
 /nbdist/
 /.nb-gradle/workspace
 workspace
+
+
+### VS code ###
+.vscode
