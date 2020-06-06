@@ -19,10 +19,24 @@ swagger:
   version: 1.0
 
 
-
 mybatis-plus:
   mapper-locations: classpath:com/heyx/springcloud/mapper/**/*.xml
   type-aliases-package: com.heyx.springcloud.entity
   configuration:
     map-underscore-to-camel-case: true #采用驼峰命名 映射下划线字段配置
 
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+  instance:
+    instance-id: payment8001
+    #访问路径可以显示IP地址
+    prefer-ip-address: true
+    #Eureka客户端向服务端发送心跳的时间间隔，单位秒（默认30）
+    lease-renewal-interval-in-seconds: 1
+    #Eureka 服务端在收到最后一次心跳后等待时间上限
+    lease-expiration-duration-in-seconds: 2
+    

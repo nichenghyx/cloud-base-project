@@ -1,0 +1,25 @@
+server:
+  port: 4001
+
+swagger:
+  base-package: com.heyx.springcloud.route
+  base-path: /api/**
+  title: springcloud
+  description: v1.0.0
+  termsOfServiceUrl: /
+  version: 1.0
+
+
+spring:
+  application:
+    name: cloud-order-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://eureka6001.com:6001/eureka/,http://eureka6002.com:6002/eureka/
+  instance:
+    instance-id: orderService4001
+    prefer-ip-address: true

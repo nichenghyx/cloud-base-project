@@ -1,0 +1,36 @@
+server:
+  port: 9001
+
+spring:
+  profiles:
+    active: dev
+
+  application:
+    name: nacos-payment-provider
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+swagger:
+  base-package: com.heyx.springcloud.route
+  base-path: /api/**
+  title: springcloud
+  description: v1.0.0
+  termsOfServiceUrl: /
+  version: 1.0
+
+
+mybatis-plus:
+  mapper-locations: classpath:com/heyx/springcloud/mapper/**/*.xml
+  type-aliases-package: com.heyx.springcloud.entity
+  configuration:
+    map-underscore-to-camel-case: true #采用驼峰命名 映射下划线字段配置
+

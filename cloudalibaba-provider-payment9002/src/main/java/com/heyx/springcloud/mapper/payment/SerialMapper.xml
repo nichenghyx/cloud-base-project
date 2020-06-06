@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.heyx.springcloud.mapper.payment.SerialMapper">
+
+    <insert id="create" parameterType="com.heyx.springcloud.model.Serial" >
+        <selectKey resultType="string" order="BEFORE" keyProperty="id">
+            SELECT replace(uuid(),'-','')
+        </selectKey>
+        insert into payment_serial(id,num) values (#{id},#{num});
+    </insert>
+
+    <resultMap id="BaseResultMap" type="com.heyx.springcloud.model.Serial">
+        <id column="id" property="id" jdbcType="VARCHAR"/>
+        <id column="num" property="num" jdbcType="VARCHAR"/>
+    </resultMap>
+    <select id="selectById" parameterType="String" resultMap="BaseResultMap">
+        select * from payment_serial where id=#{id};
+    </select>
+
+</mapper>
