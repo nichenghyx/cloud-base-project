@@ -12,6 +12,7 @@
         <module>cloud-common-utils</module>
         <module>cloud-payment-entity</module>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-provider-payment8002</module>
         <module>cloud-consumer-order4001</module>
         <module>cloud-eureka-server6001</module>
         <module>cloud-eureka-server6002</module>
